@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: Mr_Travel, Configuration: Debug Any CPU ------
+1>C:\Users\丽君\source\repos\Mr_Travel\Controllers\BookingsController.cs(73,17,73,29): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.
+1>  Mr_Travel -> C:\Users\丽君\source\repos\Mr_Travel\bin\Mr_Travel.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

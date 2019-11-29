@@ -1,0 +1,63 @@
+﻿@model Mr_Travel.Models.Hotel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hotel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Hotel_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hotel_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AVG_Rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AVG_Rating)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @if (User.IsInRole("admin") || User.IsInRole("owner"))
+    {
+        @Html.ActionLink("Edit | ", "Edit", new { id = Model.Id })
+    }
+
+    @Html.ActionLink("Back to List", "Index")
+</p>
